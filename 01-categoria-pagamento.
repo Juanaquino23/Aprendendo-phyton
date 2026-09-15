@@ -1,0 +1,29 @@
+codigo=int(input("Digite o código da categoria (1 a 5): "))
+pagamento=int(input("Digite a forma de pagamento (6 a 7): "))
+
+match codigo:
+    case 1:
+        categoria="Ação"
+    case 2:
+        categoria="Comédia"
+    case 3:
+        categoria="Drama"
+    case 4:
+        categoria="Ficção Científica"
+    case 5:
+        categoria="Animação"
+    case _:
+        categoria="Categoria inválida!"
+
+match pagamento:
+    case 6:
+        pagamento="pix"
+    case 7:
+        pagamento="cartão"
+    case _:
+        pagamento="invalida"
+
+print("\n=====CATEGORIA=====")
+print(f"Codigo : {codigo}")
+print(f"Categoria: {categoria}")
+print(f"Forma de pagamento: {pagamento}")
