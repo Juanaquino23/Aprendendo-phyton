@@ -1,0 +1,16 @@
+print("=======CÀLCULO DA MÉDIA DA TURMA =======")
+
+quantidade=int(input("Digite a quantidade de alunos da turma: "))
+
+soma_medias=0
+
+for i in range(1, quantidade+1):
+    media=float(input(f"Digite a média do {i}º do aluno: "))
+    soma_medias+=media
+
+media_turma=soma_medias/quantidade
+
+print("\n========RESULTADO========")
+print(f"Quantidade de alunos: {quantidade}")
+print(f"Média da turma: {media_turma:.2f}")
+print(f"Cálculo concluído com sucesso!")
